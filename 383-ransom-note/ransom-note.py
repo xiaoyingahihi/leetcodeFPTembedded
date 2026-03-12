@@ -5,4 +5,3 @@ class Solution(object):
                 magazine = magazine.replace(c,'',1)
             else: return False
         return True
-        
