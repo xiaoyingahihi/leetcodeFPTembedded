@@ -1,0 +1,13 @@
+class Solution(object):
+    def judgeCircle(self, moves):
+        x = 0; y = 0
+        for m in moves:
+            if m == 'U':
+                y += 1
+            elif m == 'D':
+                y -= 1
+            elif m == 'R':
+                x += 1
+            elif m == 'L':
+                x -= 1
+        return x==0 and y==0
